@@ -4,7 +4,6 @@
 
 int main(int argc, const char * argv[])
 {
-    
     CBaseMedia media;
     IBaseControl *control;
     

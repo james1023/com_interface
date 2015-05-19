@@ -27,14 +27,14 @@ public:
     }
     
     virtual bool Pause() {
-        std::cout << "CBaseControl::Run. \n";
+        std::cout << "CBaseControl::Pause. \n";
         state++;
         
         return true;
     }
     
     virtual bool Stop() {
-        std::cout << "CBaseControl::Run. \n";
+        std::cout << "CBaseControl::Stop. \n";
         state++;
         
         return true;
