@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DC3458C01B0AD05D00E3EE28 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC3458BF1B0AD05D00E3EE28 /* main.cpp */; };
+		DC9B66711B0AD814004593E2 /* CBaseControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC9B666F1B0AD814004593E2 /* CBaseControl.cpp */; };
+		DC9B66741B0ADC20004593E2 /* CBaseMedia.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC9B66721B0ADC20004593E2 /* CBaseMedia.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,13 @@
 /* Begin PBXFileReference section */
 		DC3458BC1B0AD05D00E3EE28 /* com_interface */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com_interface; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3458BF1B0AD05D00E3EE28 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DC9B666C1B0AD495004593E2 /* IBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBase.h; sourceTree = "<group>"; };
+		DC9B666D1B0AD495004593E2 /* IBaseControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBaseControl.h; sourceTree = "<group>"; };
+		DC9B666E1B0AD495004593E2 /* IBaseMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBaseMedia.h; sourceTree = "<group>"; };
+		DC9B666F1B0AD814004593E2 /* CBaseControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CBaseControl.cpp; sourceTree = "<group>"; };
+		DC9B66701B0AD814004593E2 /* CBaseControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBaseControl.h; sourceTree = "<group>"; };
+		DC9B66721B0ADC20004593E2 /* CBaseMedia.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CBaseMedia.cpp; sourceTree = "<group>"; };
+		DC9B66731B0ADC20004593E2 /* CBaseMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBaseMedia.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +66,14 @@
 		DC3458BE1B0AD05D00E3EE28 /* com_interface */ = {
 			isa = PBXGroup;
 			children = (
+				DC9B666C1B0AD495004593E2 /* IBase.h */,
+				DC9B666D1B0AD495004593E2 /* IBaseControl.h */,
+				DC9B666E1B0AD495004593E2 /* IBaseMedia.h */,
 				DC3458BF1B0AD05D00E3EE28 /* main.cpp */,
+				DC9B66721B0ADC20004593E2 /* CBaseMedia.cpp */,
+				DC9B66731B0ADC20004593E2 /* CBaseMedia.h */,
+				DC9B666F1B0AD814004593E2 /* CBaseControl.cpp */,
+				DC9B66701B0AD814004593E2 /* CBaseControl.h */,
 			);
 			path = com_interface;
 			sourceTree = "<group>";
@@ -118,6 +134,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC9B66711B0AD814004593E2 /* CBaseControl.cpp in Sources */,
+				DC9B66741B0ADC20004593E2 /* CBaseMedia.cpp in Sources */,
 				DC3458C01B0AD05D00E3EE28 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +253,7 @@
 				DC3458C51B0AD05D00E3EE28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
