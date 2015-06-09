@@ -1,11 +1,6 @@
 #include "custom_media.h"
 
 
-void CustomMedia::Release()
-{
-    delete this;
-}
-
 IBaseMedia *CreateICustomMedia()
 {
     return static_cast<IBaseMedia *> (new CustomMedia);
@@ -14,6 +9,11 @@ IBaseMedia *CreateICustomMedia()
 void DeleteICustomMedia(IBaseMedia *in)
 {
     in->Release();
+}
+
+void CustomMedia::Release()
+{
+    delete this;
 }
 
 BASE_ERR CustomMedia::QueryInterface(REFBOMID riid, void **ppv)

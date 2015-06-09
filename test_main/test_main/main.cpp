@@ -7,7 +7,7 @@
 
 int main(int argc, const char * argv[])
 {
-    std::cout << "[" << __LINE__ << "] test plugin com dll." << std::endl;
+    std::cout << "[#" << __LINE__ << "] test plugin com dll." << std::endl;
     
     boost::shared_ptr<IBaseMedia> imedia;
     IBaseControl *icontrol = NULL;
@@ -24,7 +24,8 @@ int main(int argc, const char * argv[])
         icontrol->Pause();
         icontrol->Stop();
     }
-                                                           
+    
+    imedia.reset();
     plugin.DeattachDll();
     
     return 0;

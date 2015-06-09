@@ -9,10 +9,15 @@
 
 
 PluginDll::PluginDll()
-{}
+{
+    dllpath_list_.clear();
+    media_if_dll_info_maps_.clear();
+}
 
 PluginDll::~PluginDll()
-{}
+{
+    
+}
 
 void PluginDll::AttachDll()
 {
@@ -33,18 +38,18 @@ void PluginDll::AttachDll()
             boost::property_tree::xml_parser::read_xml((*iter).c_str(), xml_head);
         }
         catch(boost::exception const &ex) {
-            std::cout << "[" << __LINE__ << "] PluginDll:AttachDll error." << std::endl;
+            std::cout << "[#" << __LINE__ << "] PluginDll:AttachDll error." << std::endl;
             return;
         }
         
         if (xml_head.empty()) {
-            std::cout << "[" << __LINE__ << "] PluginDll:AttachDll error." << std::endl;
+            std::cout << "[#" << __LINE__ << "] PluginDll:AttachDll error." << std::endl;
             return;
         }
         
         xml_child = xml_head.get_child("DllInfo");
         if (xml_child.empty()) {
-            std::cout << "[" << __LINE__ << "] PluginDll:AttachDll error." << std::endl;
+            std::cout << "[#" << __LINE__ << "] PluginDll:AttachDll error." << std::endl;
             return;
         }
         
@@ -61,7 +66,7 @@ void PluginDll::AttachDll()
 #endif // #if defined(_WIN32)
         
         if (NULL == media_if_dll_info->dll_hinst) {
-            std::cout << "[" << __LINE__ << "] PluginDll:AttachDll error." << std::endl;
+            std::cout << "[#" << __LINE__ << "] PluginDll:AttachDll error." << std::endl;
             continue;
         }
         
@@ -79,7 +84,7 @@ void PluginDll::AttachDll()
             media_if_dll_info->create_if = create_if;
         }
         else {
-            std::cout << "[" << __LINE__ << "] PluginDll:AttachDll error." << std::endl;
+            std::cout << "[#" << __LINE__ << "] PluginDll:AttachDll error." << std::endl;
             continue;
         }
         
@@ -87,7 +92,7 @@ void PluginDll::AttachDll()
             media_if_dll_info->delete_if = delete_if;
         }
         else {
-            std::cout << "[" << __LINE__ << "] PluginDll:AttachDll error." << std::endl;
+            std::cout << "[#" << __LINE__ << "] PluginDll:AttachDll error." << std::endl;
             continue;
         }
         
