@@ -1,0 +1,6 @@
+<DllInfo>
+	<PlugName>custom1</PlugName>
+	<FileName>libcustom1_media.so</FileName>
+	<CreateInterface>CreateICustom1Media</CreateInterface>
+    <DeleteInterface>DeleteICustom1Media</DeleteInterface>
+</DllInfo>

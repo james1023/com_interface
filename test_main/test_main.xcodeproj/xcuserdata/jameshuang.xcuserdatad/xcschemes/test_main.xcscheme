@@ -48,6 +48,20 @@
                ReferencedContainer = "container:../custom_media/custom_media.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DCD5BFD21B2002D100C33C86"
+               BuildableName = "libcustom1_media.so"
+               BlueprintName = "custom1_media"
+               ReferencedContainer = "container:../custom1_media/custom1_media.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
